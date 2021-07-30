@@ -4,16 +4,19 @@ class MainClass
 {
 	public static void Main(string[] args)
 	{
-		string name = "jane";
-		int age = 27;
-		bool pet = true;
-		double size = 37.5;
+		Console.WriteLine("Enter your name ?");
+		string name = Console.ReadLine();
+		Console.WriteLine("Enter your age ?");
+		byte age = byte.Parse(Console.ReadLine());
+		Console.WriteLine("Your name is {0} and age is {1}", name, age);
+		Console.WriteLine("Enter your birtdate ?");
+		var birthdate = Console.ReadLine();
+		Console.WriteLine("Your birtdate is " + birthdate);
+		Console.ReadLine();
 
-		Console.WriteLine("Как вас зовут? " + name);
-		Console.WriteLine("Сколько Вам лет? "+ age);
-		Console.WriteLine("Есть ли у Вас питомец " + pet);
-		Console.WriteLine("Какой у Вас размер ноги " +  size);
-		Console.Read();
+		
 
 	}
 }
+
+
